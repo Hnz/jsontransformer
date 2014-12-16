@@ -1,0 +1,13 @@
+{
+    "name": "jsontransformer",
+    "description": "Converts a readable NodeJS stream to a JSON list",
+    "version": "0.0.1",
+    "author": "Hans van Leeuwen",
+    "license": "MIT",
+    "homepage": "https://github.com/Hnz/jsontransformer",
+    "bugs": { "url": "http://github.com/Hnz/jsontransformer/issues" },
+    "repository": {
+        "url": "https://github.com/Hnz/jsontransformer.git",
+        "type": "git"
+    }
+}
