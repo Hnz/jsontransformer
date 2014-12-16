@@ -2,6 +2,7 @@
 // Copyright 2014, Hans van Leeuwen
 // Released under the MIT license. See LICENSE for details.
 
+var stream = require('stream')
 var util = require('util')
 
 
@@ -16,7 +17,7 @@ var util = require('util')
  * @sort_keys       {Boolean}  Whatever of not to sort the key objects
  * @type {stream.Transformer}
  */
-var JsonTransformer = module.exports.JsonTransformer = function(indent) {
+var JsonTransformer = module.exports = function(indent) {
 
     // allow use without new
     if (!(this instanceof JsonTransformer)) {
