@@ -14,7 +14,6 @@ var util = require('util')
  *
  * @class
  * @param indent    {Number}   JSON indentation
- * @sort_keys       {Boolean}  Whatever of not to sort the key objects
  * @type {stream.Transformer}
  */
 var JsonTransformer = module.exports = function(indent) {
