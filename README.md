@@ -20,14 +20,16 @@ Using [Express](http://mongoosejs.com/) and
 app.get('/api/documents', function (request, response) {
 
     mongoose
-    .model('Documents') .find(function(err, res) {
+        .model('Documents')
+        .find(function(err, res) {
 
-	    if (err) {
-		response.sendStatus(500)
-	    } else {
-		response.json(res)
-	    }
-	})
+            if (err) {
+                response.sendStatus(500)
+            }
+            else {
+                response.json(res)
+            }
+        })
 })
 ```
 
@@ -56,8 +58,11 @@ app.get('/api/documents', function (request, response) {
     response.set('Content-Type', 'application/json')
 
     mongoose
-	.model('Documents') .find() .stream() .pipe(new JSONTransformer())
-	.pipe(response)
+        .model('Documents')
+        .find()
+        .stream()
+        .pipe(new JSONTransformer())
+        .pipe(response)
 })
 ```
 
