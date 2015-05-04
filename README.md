@@ -13,7 +13,7 @@ Converts a readable NodeJS stream to a JSON list.
 Say you have a web application that loads documents from a database and
 exposes them as JSON through an API.
 
-Using [Express](http://mongoosejs.com/) and
+Using [Express](http://expressjs.com/) and
 [Mongoose](http://mongoosejs.com/), we would do something like this:
 
 ```js
@@ -48,7 +48,7 @@ As you can see, this approach is slow and inefficient.
 
 ## The solution
 
-Use [streams](nodejs.org/api/stream.html)!
+Use [streams](http://nodejs.org/api/stream.html)!
 
 Here we refactor the above code to use streams with JSONTransformer:
 
